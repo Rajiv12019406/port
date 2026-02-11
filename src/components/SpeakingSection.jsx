@@ -3,13 +3,6 @@ import StickyVideo from './StickyVideo'
 
 const events = [
   {
-    title: '10th International P2P Financial System 2024',
-    venue: 'Dubai',
-    description: 'Cryptocurrency and Taxation in India - Market Dynamics and the Impact of Taxation.',
-    video: '/assets/videos/10th P2PFISY Workshop 2024_ Cryptocurrency and Taxation in India by Amit Kumar Gupta.mp4',
-    poster: '/assets/images/p2p_thumbail_images.png',
-  },
-  {
     title: 'Dubai Conference Engagement',
     venue: 'Dubai',
     description: 'Speaking at international fintech and cryptocurrency conferences.',

@@ -29,8 +29,8 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-serif text-brand-dark leading-tight mb-8"
             >
-              I'M<br />
-              AMIT.
+              Hey, I'M AMIT KUMAR GUPTA<br />
+              
             </motion.h2>
 
             {/* Description Paragraph */}
@@ -39,16 +39,10 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-xl space-y-4"
+              className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-xl"
             >
               <p>
-                Legal expert specializing in Anti-Money Laundering (AML), FEMA laws, and Blockchain technology with a strong Engineering background. Practicing Law before the Hon'ble Supreme Court of India & High Courts.
-              </p>
-              <p>
-                As an advocate for decentralized finance (DeFi) and cryptocurrencies, I promote financial inclusion and innovation while ensuring regulatory compliance. I have successfully managed high-profile cases including the NH Scam and major bank fraud cases, demonstrating exceptional expertise in investigating financial irregularities and mitigating risks in cryptocurrency-based money laundering.
-              </p>
-              <p>
-                Currently serving as Marketing Consultant at Azitech ApS, Copenhagen, I bring strategic leadership to marketing strategy formulation, CRM workflows, and technical community engagement, while maintaining an active legal practice in India. Known for quick learning ability and expertise in data privacy, cyber law, and emerging technologies, I consistently deliver innovative legal solutions for complex technological challenges.
+                A strategic legal technocrat specializing in Anti-Money Laundering (AML), FEMA laws, and Blockchain technology. Practicing before the Hon'ble Supreme Court of India & High Courts, I bridge the gap between law and emerging technologies, delivering innovative solutions for complex regulatory challenges in DeFi, cryptocurrencies, and financial compliance. Known for quick learning and a Rubik's Cube enthusiast, I approach complex problems with analytical precision and strategic thinking.
               </p>
             </motion.div>
 

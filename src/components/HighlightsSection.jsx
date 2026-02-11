@@ -1,21 +1,22 @@
 import { motion } from 'framer-motion'
 
 const highlights = [
-  { src: encodeURI('/assets/images/With CZ (Gretest Inventor in Crypto Space, World 6th Rickhest Man).jpeg'), alt: 'With CZ, Greatest Inventor in Crypto Space' },
-  { src: encodeURI('/assets/images/In Dubai Conference.jpeg'), alt: 'In Dubai Conference' },
-  { src: encodeURI('/assets/images/With Shah Hamza, Singapore, Head at Genius Group, New york.jpeg'), alt: 'With Shah Hamza, Head at Genius Group' },
-  { src: encodeURI('/assets/images/With Saifedean Ammous, Author of The Bitcoin Standard.jpeg'), alt: 'With Saifedean Ammous, Author of The Bitcoin Standard' },
-  { src: '/assets/images/supremecourt.jpeg', alt: 'Supreme Court Practice' },
-  { src: '/assets/images/singaporeevent1.png', alt: 'Singapore AUV Challenge' },
-  { src: '/assets/images/iit_book_reading.jpeg', alt: 'IIT-Kanpur' },
-  { src: encodeURI('/assets/images/With Anchor of Web3TV.jpeg'), alt: 'With Anchor of Web3TV' },
-  { src: encodeURI('/assets/images/With Crypto Cyber Security Expert in Abu Dabhi.jpeg'), alt: 'With Crypto Cyber Security Expert in Abu Dhabi' },
-  { src: encodeURI('/assets/images/With Founder of Blue Sun in Dubai.jpeg'), alt: 'With Founder of Blue Sun in Dubai' },
-  { src: '/assets/images/professionaldine.jpeg', alt: 'Professional engagement' },
-  { src: '/assets/images/pic_drone2.jpeg', alt: 'Engineering & innovation', objectPosition: 'center 100%' },
+  { src: '/assets/images/supremecourt.jpeg', alt: 'Supreme Court of India' },
+  { src: '/assets/images/With CZ (Gretest Inventor in Crypto Space, World 6th Rickhest Man).jpeg', alt: 'With CZ, Greatest Inventor in Crypto Space' },
+  { src: '/assets/images/In Dubai Conference.jpeg', alt: 'Dubai Conference' },
+  { src: '/assets/images/With Shah Hamza, Singapore, Head at Genius Group, New york.jpeg', alt: 'With Shah Hamza, Singapore' },
+  { src: '/assets/images/Amit-IIt-photo.jpeg', alt: 'IIT-Kanpur' },
+  { src: '/assets/images/With Saifedean Ammous, Author of The Bitcoin Standard.jpeg', alt: 'With Saifedean Ammous, Author of The Bitcoin Standard' },
+  { src: '/assets/images/With Anchor of Web3TV.jpeg', alt: 'With Anchor of Web3TV' },
+  { src: '/assets/images/With Founder of Exponential Science.jpeg', alt: 'With Founder of Exponential Science' },
+  
 ]
 
 export default function HighlightsSection() {
+  if (highlights.length === 0) {
+    return null
+  }
+
   return (
     <section id="gallery" className="py-20 lg:py-28 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

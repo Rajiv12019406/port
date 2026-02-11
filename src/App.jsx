@@ -12,7 +12,6 @@ import AchievementsSection from './components/AchievementsSection'
 import ComplianceSection from './components/ComplianceSection'
 import TechnicalSkillsSection from './components/TechnicalSkillsSection'
 import CertificationsSection from './components/CertificationsSection'
-import SpeakingSection from './components/SpeakingSection'
 import HighlightsSection from './components/HighlightsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -35,10 +34,9 @@ function App() {
         <ComplianceSection />
         <TechnicalSkillsSection />
         <CertificationsSection />
-        <SpeakingSection />
         <HighlightsSection />
         <ContactSection />
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </div>
   )

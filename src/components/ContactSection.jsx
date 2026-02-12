@@ -67,7 +67,7 @@ export default function ContactSection() {
             <p className="text-white/80 text-lg mb-6">
               Book a meeting to discuss legal consultations, collaborations, or discussions on legal technology and blockchain regulations.
             </p>
-            <div className="w-full mt-auto" style={{ height: '500px', borderRadius: '8px', overflow: 'hidden' }}>
+            <div className="w-full mt-auto" style={{ height: '250px', borderRadius: '8px', overflow: 'hidden' }}>
               <iframe
                 src="https://calendly.com/amitkgupta159?embed=true&embed_domain=localhost&embed_type=Inline"
                 width="100%"

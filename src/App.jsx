@@ -24,11 +24,11 @@ function App() {
         <HeroSection />
         <LogosSection />
         <AboutSection />
-        <CoreCompetencies />
         <EducationSection />
         <MidCarousel />
         <ExperienceSection />
         <ResearchSection />
+        <CoreCompetencies />
         <VideoCTASection />
         <AchievementsSection />
         <ComplianceSection />

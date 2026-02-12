@@ -24,12 +24,13 @@ const achievements = [
     description: 'Achieved 96 percentile in Master\'s in Financial Technology and Management from Indian Institute of Technology, Kanpur.',
     tag: 'Academic Achievement',
     image: '/assets/images/iit_book_reading.jpeg',
+    imageStyle: { objectPosition: 'center 45%' },
   },
 ]
 
 export default function AchievementsSection() {
   return (
-    <section className="py-20 lg:py-28 bg-brand-cream">
+    <section className="py-16 lg:py-24 bg-brand-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,8 +52,13 @@ export default function AchievementsSection() {
               transition={{ delay: i * 0.08 }}
               className="rounded-2xl bg-white border border-gray-100 shadow-soft hover:shadow-card transition-shadow overflow-hidden"
             >
-              <div className="aspect-video w-full overflow-hidden bg-gray-100">
-                <img src={item.image} alt="" className="w-full h-full object-cover" />
+              <div className="w-full overflow-hidden bg-gray-100 aspect-[4/4]">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                  style={item.imageStyle}
+                />
               </div>
               <div className="p-6">
                 <span className="text-xs font-semibold text-brand-accent uppercase tracking-wider">{item.tag}</span>

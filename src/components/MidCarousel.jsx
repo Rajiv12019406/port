@@ -9,7 +9,7 @@ const slides = [
   { image: encodeURI('/assets/images/research4.jpeg'), objectPosition: 'center 25%' },
   { image: '/assets/images/research5.jpeg', objectPosition: 'center 25%' },
   { image: '/assets/images/research6.jpeg', objectPosition: 'center 25%' },
-  { image: '/assets/images/research10.jpeg', objectPosition: 'center 25%' },
+  { image: '/assets/images/R1.jpeg', objectPosition: 'center 25%' },
 ]
 
 export default function MidCarousel() {

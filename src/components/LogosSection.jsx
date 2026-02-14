@@ -1,23 +1,28 @@
 import { motion } from 'framer-motion'
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const logos = [
-  { src: '/assets/images/binance_logo.png', alt: 'Binance' },
-  { src: '/assets/images/binanace_logo1.png', alt: 'Binance' },
-  { src: '/assets/images/cnn_logo.png', alt: 'CNN' },
-  { src: '/assets/images/coingekoimage.png', alt: 'CoinGecko' },
-  { src: '/assets/images/france_logo.png', alt: 'France' },
-  { src: '/assets/images/chinese_news_logo.png', alt: 'Chinese News' },
+  { src: `${base}/assets/images/logos/1.png`, alt: 'Binance' },
+  { src: `${base}/assets/images/logos/2.webp`, alt: 'Bitget' },
+  { src: `${base}/assets/images/logos/3.png`, alt: 'Todayq News' },
+  { src: `${base}/assets/images/logos/4.png`, alt: 'Partner' },
+  { src: `${base}/assets/images/logos/5.png`, alt: 'Microsoft Start' },
+  { src: `${base}/assets/images/logos/6.png`, alt: 'Crypto India Magazine' },
+  { src: `${base}/assets/images/logos/7.jpg`, alt: 'Coinlive' },
+  { src: `${base}/assets/images/logos/8.png`, alt: 'CoinMarketCap' },
+  { src: `${base}/assets/images/logos/9.jpg`, alt: 'Binance' },
+  { src: `${base}/assets/images/logos/10.jpg`, alt: 'Cointelegraph' },
 ]
 
 export default function LogosSection() {
   return (
-    <section className="py-16 bg-gray-900">
+    <section className="py-14 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-2xl sm:text-3xl font-serif text-white mb-12"
+          className="text-center text-xl sm:text-2xl font-serif text-white mb-6"
         >
           You Might Have Seen Me On
         </motion.h2>
@@ -25,15 +30,19 @@ export default function LogosSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="flex flex-wrap items-center justify-center gap-8 lg:gap-12"
+          className="flex flex-wrap items-center justify-center gap-6 lg:gap-7"
         >
           {logos.map((logo) => (
-            <img
+            <div
               key={logo.src}
-              src={logo.src}
-              alt={logo.alt}
-              className="h-8 lg:h-10 object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
-            />
+              className="flex items-center justify-center h-12 lg:h-12 px-5 py-3 rounded-lg bg-white/95 shadow-sm hover:bg-white transition-colors"
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="h-8 lg:h-6 w-auto max-w-[90px] object-contain"
+              />
+            </div>
           ))}
         </motion.div>
       </div>

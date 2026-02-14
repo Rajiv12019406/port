@@ -22,27 +22,32 @@ export default function AboutSection() {
               
             </motion.p>
 
-            {/* Main Heading - Split across two lines */}
+            {/* Main Heading */}
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-serif text-brand-dark leading-tight mb-8"
             >
-              Hey, I'M AMIT KUMAR GUPTA<br />
-              
+              AMIT KUMAR GUPTA
             </motion.h2>
 
-            {/* Description Paragraph */}
+            {/* Description Paragraphs */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-xl"
+              className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-xl space-y-6"
             >
               <p>
-                A strategic legal technocrat specializing in Anti-Money Laundering (AML), FEMA laws, and Blockchain technology. Practicing before the Hon'ble Supreme Court of India & High Courts, I bridge the gap between law and emerging technologies, delivering innovative solutions for complex regulatory challenges in DeFi, cryptocurrencies, and financial compliance. Known for quick learning and a Rubik's Cube enthusiast, I approach complex problems with analytical precision and strategic thinking.
+                I advise regulators, financial institutions, and fintech enterprises on financial crime risk, regulatory architecture, and digital asset governance.
+              </p>
+              <p>
+                Operating at the intersection of finance, law, and technological infrastructure, I translate complex regulatory systems into structured, defensible market strategy.
+              </p>
+              <p>
+                With a foundation in engineering and advanced training in financial technology, I design scalable compliance frameworks and governance models for evolving digital financial ecosystems.
               </p>
             </motion.div>
 

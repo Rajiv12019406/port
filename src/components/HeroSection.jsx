@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const slides = [
@@ -15,6 +15,7 @@ const slides = [
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0)
+  const sectionRef = useRef(null)
 
   const next = () => setCurrent((c) => (c + 1) % slides.length)
   const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length)
@@ -24,8 +25,22 @@ export default function HeroSection() {
     return () => clearInterval(interval)
   }, [])
 
+  // Reset carousel to first slide when hero scrolls back into view
+  useEffect(() => {
+    const el = sectionRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) setCurrent(0)
+      },
+      { threshold: 0.3 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-brand-dark text-white overflow-hidden pt-20">
+    <section ref={sectionRef} id="hero" className="relative min-h-screen flex items-center justify-center bg-brand-dark text-white overflow-hidden pt-20">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
         style={{ backgroundImage: 'url(/assets/images/research9.jpeg)' }}
@@ -38,9 +53,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm font-medium text-white/70 uppercase tracking-widest mb-6"
+          className="text-base sm:text-lg font-medium text-white/90 uppercase tracking-widest mb-6"
         >
-          Legal Tech Professional & Supreme Court Practitioner
+          Amit Kumar Gupta
+          Supreme Court Advocate • MBA Gold-Medalist • Legal Technologist
+
         </motion.p>
 
         <div className="relative min-h-[180px] sm:min-h-[200px] flex items-center justify-center">
@@ -51,7 +68,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-serif leading-tight tracking-tight text-white"
             >
               {slides[current].title}
             </motion.h1>
@@ -71,12 +88,12 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-6 text-sm text-white/60"
+          className="mt-6 text-base sm:text-lg text-white/90"
         >
-          Dubai, UAE | India · Digital Assets · AML · Financial Regulation · Compliance
+          Dubai, UAE |India ·  Business Strategist. MBA Gold Medalist· Digital Assets · AML · Financial Regulation · Compliance
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
@@ -88,10 +105,10 @@ export default function HeroSection() {
           >
             Learn More
           </a>
-        </motion.div>
+        </motion.div> */}
 
         {/* Carousel controls */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
@@ -128,7 +145,7 @@ export default function HeroSection() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <motion.a

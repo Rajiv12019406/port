@@ -24,7 +24,7 @@ function App() {
         <HeroSection />
         <LogosSection />
         <AboutSection />
-        <EducationSection />
+        
         <MidCarousel />
         <ExperienceSection />
         <ResearchSection />
@@ -33,6 +33,7 @@ function App() {
         <AchievementsSection />
         <ComplianceSection />
         <TechnicalSkillsSection />
+        <EducationSection />
         <CertificationsSection />
         <HighlightsSection />
         <ContactSection />

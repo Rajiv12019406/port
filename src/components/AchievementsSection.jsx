@@ -17,7 +17,8 @@ const achievements = [
     title: 'International Engineering Excellence',
     description: 'Achieved 2nd position in Singapore AUV Challenge organized by IEEE in 2018, securing 18th rank out of 54 AUVs from 13 nations.',
     tag: 'Technical Excellence',
-    image: '/assets/images/singaporeevent1.png',
+    image: '/assets/images/Singapore best photo with Robot and Team.jpeg',
+    imageStyle: { objectPosition: 'left center' },
   },
   {
     title: 'Academic Excellence at IIT-Kanpur',

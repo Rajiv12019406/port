@@ -38,7 +38,7 @@ const education = [
 
 export default function EducationSection() {
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="py-20 lg:py-28 bg-white font-bold text-[100%]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12 mb-12">
           <motion.h2

@@ -10,7 +10,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Amit Kumar Gupta. All rights reserved.
         </p>
         <p className="text-xs mt-2 text-gray-500">
-          Professional Portfolio — Legal Tech Professional & Supreme Court Practitioner
+         Strategic Advisory — Finance · AML · Blockchain Governance
         </p>
       </div>
     </footer>

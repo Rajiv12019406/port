@@ -13,19 +13,22 @@ const achievements = [
     tag: 'Blockchain & Cryptocurrency',
     image: '/assets/images/adv1.jpeg',
   },
+  
+  {
+    title: 'Academic Excellence at IIT-Kanpur',
+    description: 'Achieved 96 percentile in Master\'s in Financial Technology and Management from Indian Institute of Technology, Kanpur.',
+    tag: 'Academic Achievement',
+    image: '/assets/images/iit_lab1.jpeg',
+    
+    imageStyle: { objectPosition: '50% 50%' },
+   
+  },
   {
     title: 'International Engineering Excellence',
     description: 'Achieved 2nd position in Singapore AUV Challenge organized by IEEE in 2018, securing 18th rank out of 54 AUVs from 13 nations.',
     tag: 'Technical Excellence',
     image: '/assets/images/Singapore best photo with Robot and Team.jpeg',
     imageStyle: { objectPosition: 'left center' },
-  },
-  {
-    title: 'Academic Excellence at IIT-Kanpur',
-    description: 'Achieved 96 percentile in Master\'s in Financial Technology and Management from Indian Institute of Technology, Kanpur.',
-    tag: 'Academic Achievement',
-    image: '/assets/images/iit_book_reading.jpeg',
-    imageStyle: { objectPosition: 'center 45%' },
   },
 ]
 

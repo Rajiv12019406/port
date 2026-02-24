@@ -29,7 +29,9 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-serif text-brand-dark leading-tight mb-8"
             >
-              AMIT KUMAR GUPTA
+              AMIT KUMAR GUPTA 
+              
+
             </motion.h2>
 
             {/* Description Paragraphs */}
@@ -38,16 +40,20 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-xl space-y-6"
+              // className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-xl space-y-6"
+              className="text-base sm:text-lg text-gray-700 leading-relaxed tracking-wide mb-8 max-w-xl space-y-6 text-justify"
             >
+             <p className="font-bold text-[120%]">
+  The Legal Technocrat | Engineer | MBA Gold Medalist | Supreme Court Practitioner
+</p>
               <p>
-                I advise regulators, financial institutions, and fintech enterprises on financial crime risk, regulatory architecture, and digital asset governance.
+              ✦ I advise regulators, financial institutions, and fintech enterprises on financial crime risk, regulatory architecture, and digital asset governance.
               </p>
               <p>
-                Operating at the intersection of finance, law, and technological infrastructure, I translate complex regulatory systems into structured, defensible market strategy.
+              ✦ Operating at the intersection of finance, law, and technological infrastructure, I translate complex regulatory systems into structured, defensible market strategy.
               </p>
               <p>
-                With a foundation in engineering and advanced training in financial technology, I design scalable compliance frameworks and governance models for evolving digital financial ecosystems.
+              ✦ With a foundation in engineering and advanced training in financial technology, I design scalable compliance frameworks and governance models for evolving digital financial ecosystems.
               </p>
             </motion.div>
 

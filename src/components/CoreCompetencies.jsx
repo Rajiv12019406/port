@@ -29,7 +29,7 @@ const competencies = [
 
 export default function CoreCompetencies() {
   return (
-    <section className="py-20 lg:py-28 bg-brand-cream">
+    <section className="py-20 lg:py-28 bg-brand-cream ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function CoreCompetencies() {
           viewport={{ once: true }}
           className="mb-4"
         >
-          <p className="text-brand-accent font-semibold uppercase tracking-wider text-sm">E-Master's — IIT-Kanpur · 96.5 Percentile</p>
+          {/* <p className="text-brand-accent font-semibold uppercase tracking-wider text-sm">E-Master's — IIT-Kanpur · 96.5 Percentile</p> */}
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

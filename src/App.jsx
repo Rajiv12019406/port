@@ -34,7 +34,7 @@ function App() {
         <ComplianceSection />
         <TechnicalSkillsSection />
         <EducationSection />
-        <CertificationsSection />
+        {/* <CertificationsSection /> */}
         <HighlightsSection />
         <ContactSection />
         <Footer />

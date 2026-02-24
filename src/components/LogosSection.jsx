@@ -16,7 +16,7 @@ const logos = [
 
 export default function LogosSection() {
   return (
-    <section className="py-14 bg-gray-900">
+    <section className="py-16 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
@@ -35,13 +35,13 @@ export default function LogosSection() {
           {logos.map((logo) => (
             <div
               key={logo.src}
-              className="flex items-center justify-center h-12 lg:h-12 px-5 py-3 rounded-lg bg-white/95 shadow-sm hover:bg-white transition-colors"
+              className="flex items-center justify-center h-16 lg:h-18 px-5 py-3 rounded-lg bg-white/95 shadow-sm hover:bg-white transition-colors"
             >
               <img
-                src={logo.src}
-                alt={logo.alt}
-                className="h-8 lg:h-6 w-auto max-w-[90px] object-contain"
-              />
+  src={logo.src}
+  alt={logo.alt}
+  className="h-8 sm:h-10 lg:h-12 w-auto max-w-[120px] object-contain"
+/>
             </div>
           ))}
         </motion.div>

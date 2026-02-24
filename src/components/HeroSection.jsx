@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const slides = [
   {
-    title: 'Create Innovative Legal Solutions at the Intersection of Law and Technology',
+    title: 'Create Innovative Solutions at the Intersection of Finance , Law and Technology',
   },
   {
     title: 'Expert in AML, FEMA & Financial Technology',
@@ -55,8 +55,10 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="text-base sm:text-lg font-medium text-white/90 uppercase tracking-widest mb-6"
         >
-          Amit Kumar Gupta
-          Supreme Court Advocate • MBA Gold-Medalist • Legal Technologist
+          Amit Kumar Gupta<br />
+          MBA GOLD MEDALIST, IIT-KANPUR <br />
+          ADVOCATE, SUPREME COURT PRACTITIONER 
+
 
         </motion.p>
 
@@ -75,14 +77,20 @@ export default function HeroSection() {
           </AnimatePresence>
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="text-white/80 text-lg mt-6 max-w-2xl mx-auto"
-        >
-          Working at the intersection of law, technology, and financial systems to design regulation that actually works in practice.
-        </motion.p>
+        <AnimatePresence mode="wait">
+          {current === 0 && (
+            <motion.p
+              key="intersection"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="text-white/80 text-lg mt-6 max-w-2xl mx-auto"
+            >
+              Working at the intersection of law, technology, and financial systems to design regulation that actually works in practice.
+            </motion.p>
+          )}
+        </AnimatePresence>
 
         <motion.div
           initial={{ opacity: 0 }}

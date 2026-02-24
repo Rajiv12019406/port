@@ -20,7 +20,7 @@ const publications = [
     venue: 'FLAMES Scopus Indexed Conference, India, 2020',
     description: 'Heat Design and Development of an Unmanned Aerial Vehicle - Technical research on UAV development.',
     tag: 'Engineering Innovation',
-    image: '/assets/images/research3.jpeg',
+    image: '/assets/images/pic_drone1.jpeg',
   },
   {
     title: 'Heat Transfer Analysis in IC Engines',
@@ -30,11 +30,11 @@ const publications = [
     image: '/assets/images/research4.jpeg',
   },
   {
-    title: 'FSW Optimization using AI',
+    title: 'FSW Optimization using AI Bangkok,Thialand',
     venue: 'ISFT-2018, Bangkok, Thailand',
     description: 'Prediction of optimum welding parameters using Genetic Algorithm and ANN.',
     tag: 'AI & Optimization',
-    image: '/assets/images/research5.jpeg',
+    image: '/assets/images/fsw_optimization.jpeg',
   },
   {
     title: 'Turbine Blade Analysis',

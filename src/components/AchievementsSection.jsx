@@ -18,10 +18,9 @@ const achievements = [
     title: 'Academic Excellence at IIT-Kanpur',
     description: 'Achieved 96 percentile in Master\'s in Financial Technology and Management from Indian Institute of Technology, Kanpur.',
     tag: 'Academic Achievement',
-    image: '/assets/images/iit_lab1.jpeg',
-    
-    imageStyle: { objectPosition: '50% 50%' },
-   
+    image: '/assets/images/iit_book_reading.jpeg',
+    imageStyle: { objectPosition: '20% 50% ' },
+        
   },
   {
     title: 'International Engineering Excellence',

@@ -5,7 +5,7 @@ const highlights = [
   { src: '/assets/images/With CZ (Gretest Inventor in Crypto Space, World 6th Rickhest Man).jpeg', alt: 'With CZ, Greatest Inventor in Crypto Space' },
   { src: '/assets/images/In Dubai Conference.jpeg', alt: 'Dubai Conference' },
   { src: '/assets/images/With Shah Hamza, Singapore, Head at Genius Group, New york.jpeg', alt: 'With Shah Hamza, Singapore' },
-  { src: '/assets/images/Amit-IIt-photo.jpeg', alt: 'IIT-Kanpur' },
+  { src: '/assets/images/With Crypto Cyber Security Expert in Abu Dabhi.jpeg', alt: 'IIT-Kanpur' },
   { src: '/assets/images/With Saifedean Ammous, Author of The Bitcoin Standard.jpeg', alt: 'With Saifedean Ammous, Author of The Bitcoin Standard' },
   { src: '/assets/images/With Anchor of Web3TV.jpeg', alt: 'With Anchor of Web3TV' },
   { src: '/assets/images/With Founder of Exponential Science.jpeg', alt: 'With Founder of Exponential Science' },
